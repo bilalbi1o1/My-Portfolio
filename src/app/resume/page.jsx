@@ -15,7 +15,7 @@ import { motion } from "framer-motion"
 //about
 const about = {
   title: "About Me",
-  description: "I am a student of BSCS with expertise in web development. My skills allow me to create efficient and scalable web solutions, ensuring robust and high-performing applications.",
+  // description: "I am a student of BSCS with expertise in web development. My skills allow me to create efficient and scalable web solutions, ensuring robust and high-performing applications.",
   info: [
     {
       fieldName: "Name",
@@ -43,7 +43,7 @@ const about = {
     },
     {
       fieldName: "Languages",
-      fieldValue: "English,Hindi,Urdu",
+      fieldValue: "English,Urdu",
     },
   ]
 }

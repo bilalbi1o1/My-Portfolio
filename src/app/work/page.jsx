@@ -21,75 +21,15 @@ import WorkSliderBtns from "@/components/WorkSliderBtns"
 const projects = [
   {
     num: '01',
-    title: 'Project1',
-    category: 'Backend',
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, velit porro. Autem doloremque.",
+    title: 'Business App Crud',
+    category: 'Full-Stack',
+    description: "A full stack Crud application with proper authentication and front and back-end integration with dataBase connection.",
     stack: [
-      { name: "Node js" }, { name: "Javascript" },
+      { name: "React js" },{ name: "Node js" }, { name: "Express" },{ name: "CSS" },{ name: "MySql" },{ name: "JWT" },
     ],
-    image: "",
+    image: "/projectPhoto/p1Thumbnail.png",
     live: "",
-    github: "https://github.com/bilalbi1o1"
-  },
-  {
-    num: '02',
-    title: 'Project1',
-    category: 'Backend',
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, velit porro. Autem doloremque.",
-    stack: [
-      { name: "Node js" }, { name: "Javascript" },
-    ],
-    image: "",
-    live: "",
-    github: "https://github.com/bilalbi1o1"
-  },
-  {
-    num: '03',
-    title: 'Project1',
-    category: 'Backend',
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, velit porro. Autem doloremque.",
-    stack: [
-      { name: "Node js" }, { name: "Javascript" },
-    ],
-    image: "",
-    live: "",
-    github: "https://github.com/bilalbi1o1"
-  },
-  {
-    num: '04',
-    title: 'Project1',
-    category: 'Backend',
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, velit porro. Autem doloremque.",
-    stack: [
-      { name: "Node js" }, { name: "Javascript" },
-    ],
-    image: "",
-    live: "",
-    github: "https://github.com/bilalbi1o1"
-  },
-  {
-    num: '05',
-    title: 'Project1',
-    category: 'Backend',
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, velit porro. Autem doloremque.",
-    stack: [
-      { name: "Node js" }, { name: "Javascript" },
-    ],
-    image: "",
-    live: "",
-    github: "https://github.com/bilalbi1o1"
-  },
-  {
-    num: '06',
-    title: 'Project1',
-    category: 'Backend',
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, velit porro. Autem doloremque.",
-    stack: [
-      { name: "Node js" }, { name: "Javascript" },
-    ],
-    image: "",
-    live: "",
-    github: "https://github.com/bilalbi1o1"
+    github: "https://github.com/bilalbi1o1/Business-App-Crud"
   },
 ]
 
@@ -142,7 +82,7 @@ const work = () => {
                 {/* button */}
                 <div className="flex items-center gap-4">
                   {/* live project button */}
-                  <Link href={project.live}>
+                 {project.live && <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 
@@ -155,7 +95,7 @@ const work = () => {
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
-                  </Link>
+                  </Link>}
                   {/* github project button */}
                   <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
@@ -178,29 +118,30 @@ const work = () => {
             <Swiper 
             spaceBetween={30}
             slidesPerView={1}
-            className="xl:h-[520px] mb-12"
+            className="xl:h-[500px] mb-4"
             onSlideChange={handleSlideChange}
             >
               {projects.map((project,index) => {
                 return <SwiperSlide key={index} className="w-full">
                   <div className="h-[380px] relative group flex justify-center 
-                  items-center bg-pink-50/20">
+                  items-center bg-transparent ">
                     {/* overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full
                       bg-black/10 z-10"></div>
                     {/* image */}
-                      <div className="relative w-full h-full">
-                        <Image src={project.image} fill className="object-cover"
+                      <div className="relative w-full h-full ">
+                        <Image src={project.image} layout="fill" objectFit="contain"
+                         className="object-cover"
                         alt="" />
                       </div>
                   </div>
                 </SwiperSlide>
               })}
               {/* slider buttons */}
-              <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 
-              bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between 
+              <WorkSliderBtns containerStyles=" flex gap-2 absolute right-0 
+              bottom-[calc(50%_-_22px)] xl:bottom-16 z-20 w-full justify-between 
               xl:w-max xl:justify-none" 
-              btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px]
+              btnStyles="max-xl:bg-opacity-40 bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px]
                h-[44px] flex justify-center items-center transition-all"
               iconsStyles="" />
             </Swiper>

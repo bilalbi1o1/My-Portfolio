@@ -156,7 +156,7 @@ const contact = () => {
                 className="h-[200px]"
               />
               {/* btn */}
-              <Button size="md" className="max-w-32" type="submit">Send message</Button>
+              <Button size="md" className="max-w-36" type="submit">Send message</Button>
             </form>
           </div>
           {/* info */}

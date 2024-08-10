@@ -31,6 +31,30 @@ const projects = [
     live: "",
     github: "https://github.com/bilalbi1o1/Business-App-Crud"
   },
+  {
+    num: '02',
+    title: 'Dos Shell',
+    category: 'Data-Structures',
+    description: "Dos Shell project with all the basic functionalitites of a dos shell implemented using Tree data structure.",
+    stack: [
+      { name: "C++" },
+    ],
+    image: "/projectPhoto/dosThumbnail.png",
+    live: "",
+    github: "https://github.com/bilalbi1o1/DosShell"
+  },
+  {
+    num: '03',
+    title: 'Excel',
+    category: 'Data-Structures',
+    description: "Excel project with all the basic functionalitites of excel implemented using Linked Lists.",
+    stack: [
+      { name: "C++" },
+    ],
+    image: "/projectPhoto/excelThumbnail.png",
+    live: "",
+    github: "https://github.com/bilalbi1o1/miniExcel"
+  },
 ]
 
 const work = () => {

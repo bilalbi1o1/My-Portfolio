@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation"
 //Components
 import Stairs from "./Stairs";
 
-const stairTransition = () => {
+const StairTransition = () => {
     const pathname = usePathname();
   return (
     <AnimatePresence mode="wait">
@@ -23,4 +23,4 @@ const stairTransition = () => {
   )
 }
 
-export default stairTransition
+export default StairTransition

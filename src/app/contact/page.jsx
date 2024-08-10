@@ -29,7 +29,7 @@ const info = [
   },
 ]
 
-const contact = () => {
+const Contact = () => {
 
   const [formData, setFormData] = useState({
     firstname: '',
@@ -183,4 +183,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact

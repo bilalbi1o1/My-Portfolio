@@ -72,7 +72,7 @@ const Work = () => {
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: {delay: 2.4,duration:0.4 ,ease: "easeIn"} }}
-      className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0 mb-12"
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
@@ -91,7 +91,7 @@ const Work = () => {
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap gap-4">
                 {project.stack.map((item,index) => {
                     return <li key={index} className="text-xl text-accent">
                       {item.name}

@@ -5,7 +5,7 @@ import Socials from './Socials'
 
 const Footer = () => {
   return (
-    <div className='max-sm:fixed max-sm:bottom-0 mb-0 bg-slate-800 w-full h-16 flex items-center justify-between xl:mt-5'>
+    <div className='max-lg:fixed max-lg:bottom-0 mb-0 bg-slate-800 w-full h-16 flex items-center justify-between xl:mt-5'>
       <div>
         <Socials containerStyles='flex pl-2 sm:pl-8 gap-6' iconStyles='h-9 w-9 border  
                 border-accent rounded-full flex justify-center items-center text-accent 
